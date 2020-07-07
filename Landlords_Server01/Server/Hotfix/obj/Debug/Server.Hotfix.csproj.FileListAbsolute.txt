@@ -1,0 +1,12 @@
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\libkcp.dylib
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\libkcp.so
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\Hotfix.deps.json
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\Hotfix.dll
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\Hotfix.pdb
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Server.Hotfix.csprojAssemblyReference.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Server.Hotfix.AssemblyInfoInputs.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Server.Hotfix.AssemblyInfo.cs
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Server.Hotfix.csproj.CoreCompileInputs.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Server.Hotfix.csproj.CopyComplete
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Hotfix.dll
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\obj\Debug\Hotfix.pdb

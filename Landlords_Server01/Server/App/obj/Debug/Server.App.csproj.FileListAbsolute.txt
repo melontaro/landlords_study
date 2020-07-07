@@ -1,0 +1,17 @@
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\libkcp.dylib
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\libkcp.so
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\NLog.config
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.dll.config
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.deps.json
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.runtimeconfig.json
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.runtimeconfig.dev.json
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.dll
+C:\Workspace4Git\landlords_study\Landlords_Server01\Bin\App.pdb
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.csprojAssemblyReference.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.AssemblyInfoInputs.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.AssemblyInfo.cs
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.csproj.CoreCompileInputs.cache
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.csproj.CopyComplete
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\App.dll
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\App.pdb
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\obj\Debug\Server.App.genruntimeconfig.cache
