@@ -9,7 +9,7 @@ namespace ETHotfix
 	{
 		protected override async ETTask Run(Session session, C2G_TestMessage request, G2C_TestMessage response, Action reply)
 		{
-			response.Message = "前端的朋友，消息收到了<<===";
+			response.Message = "前端的朋友，消息收到了,哈哈哈<<===";
 			reply();
 		}
 	}

@@ -35,5 +35,15 @@ namespace ETModel
 		 public const ushort G2M_CreateUnit = 1031;
 		 public const ushort M2G_CreateUnit = 1032;
 		 public const ushort G2M_SessionDisconnect = 1033;
+		 public const ushort A0006_GetLoginKey_R2G = 1034;
+		 public const ushort A0006_GetLoginKey_G2R = 1035;
+		 public const ushort A0004_PlayerOnline_G2R = 1036;
+		 public const ushort A0005_PlayerOffline_G2R = 1037;
+		 public const ushort A0007_KickOutPlayer_R2G = 1038;
+		 public const ushort A0007_KickOutPlayer_G2R = 1039;
+		 public const ushort Actor_MatchSucess_M2G = 1040;
+		 public const ushort T_MatchSucess_M2G = 1041;
+		 public const ushort EnterMatchs_G2M = 1042;
+		 public const ushort Actor_PlayerExitRoom_G2M = 1043;
 	}
 }

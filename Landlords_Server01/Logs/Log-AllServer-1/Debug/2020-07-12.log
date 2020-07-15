@@ -1,0 +1,177 @@
+2020-07-12 08:11:57.6046 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 08:12:06.1355 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 08:12:06.1584 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 08:12:06.4645 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 08:12:06.4996 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 08:12:06.5253 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("-3134667169322112884") }
+2020-07-12 08:12:06.5572 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("-3134667169322112884") }
+2020-07-12 08:12:06.5911 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 08:12:06.6165 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 08:12:06.6373 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 08:12:06.7678 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 08:12:09.8195 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 08:12:09.8565 AllServer 0001 (C2G_StartMatch_Handler.cs:13) 玩家开始匹配
+2020-07-12 08:12:09.8897 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 4, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 08:12:09.9446 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 08:12:10.0153 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 08:12:10.0489 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710733"), "CActorID" : NumberLong("281474976710732") }
+2020-07-12 08:12:10.0751 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 5, "Key" : NumberLong("281474976710742"), "InstanceId" : NumberLong("281474976710742") }
+2020-07-12 08:12:10.0849 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2020-07-12 08:12:10.0849 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 08:12:10.0849 AllServer 0001 (LandMatchComponentSystem.cs:144) 转发给了客户端一条消息，客户端Session：281474976710732
+2020-07-12 08:12:10.2370 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "MatchingNumber" : 1 }
+2020-07-12 08:12:10.3110 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 6, "Key" : NumberLong("281474976710744"), "InstanceId" : NumberLong("281474976710744") }
+2020-07-12 08:12:10.4759 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 6, "Error" : 0, "Message" : null }
+2020-07-12 08:12:10.5028 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 08:12:10.5147 AllServer 0001 (Session.cs:142) { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+2020-07-12 08:12:39.3093 AllServer 0001 (Session.cs:142) { "_t" : "C2G_ReturnLobby_Ntt", "RpcId" : 0 }
+2020-07-12 08:12:39.4997 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 6 }
+2020-07-12 08:12:39.5103 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 7, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 08:12:39.5253 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 7, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 08:13:22.6738 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 7 }
+2020-07-12 13:11:31.9491 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 13:11:55.4582 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 13:12:03.0498 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 13:12:03.0702 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 13:12:03.2151 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 13:12:03.2249 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 13:12:03.2418 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("3841980391975942109") }
+2020-07-12 13:12:03.2592 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("3841980391975942109") }
+2020-07-12 13:12:03.2787 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 13:12:03.2943 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 13:12:03.3106 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 13:12:03.3997 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 13:20:22.4185 AllServer 0001 (Session.cs:142) { "_t" : "A0005_PlayerOffline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:01:06.0867 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 15:01:18.6033 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 15:01:18.6033 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 4, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 15:01:18.7931 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 4, "Error" : 0, "Message" : null }
+2020-07-12 15:01:18.8253 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 5, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:01:18.8253 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 5, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("-1185791052722102536") }
+2020-07-12 15:01:18.8532 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("-1185791052722102536") }
+2020-07-12 15:01:18.8532 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 15:01:18.8872 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 15:01:18.8872 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 6, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:01:18.8872 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:01:25.0812 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 15:01:25.0863 AllServer 0001 (C2G_StartMatch_Handler.cs:13) 玩家开始匹配
+2020-07-12 15:01:25.0863 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 7, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:01:25.0863 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 7, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:01:25.0986 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 15:01:25.0986 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710755"), "CActorID" : NumberLong("281474976710754") }
+2020-07-12 15:01:25.1167 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 8, "Key" : NumberLong("281474976710761"), "InstanceId" : NumberLong("281474976710761") }
+2020-07-12 15:01:25.1167 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 8, "Error" : 0, "Message" : null }
+2020-07-12 15:01:25.1167 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 15:01:25.1336 AllServer 0001 (LandMatchComponentSystem.cs:144) 转发给了客户端一条消息，客户端Session：281474976710754
+2020-07-12 15:01:25.1480 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710754"), "MatchingNumber" : 1 }
+2020-07-12 15:01:25.1480 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 9, "Key" : NumberLong("281474976710763"), "InstanceId" : NumberLong("281474976710763") }
+2020-07-12 15:01:25.1480 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2020-07-12 15:01:25.1635 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710754"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 15:01:25.1843 AllServer 0001 (Session.cs:142) { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710755"), "GamerID" : NumberLong("281474976710761") }
+2020-07-12 15:06:19.0712 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 15:06:29.8146 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 15:06:29.8371 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 15:06:29.9712 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 15:06:29.9842 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:06:29.9987 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("5922315045367021908") }
+2020-07-12 15:06:30.0202 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("5922315045367021908") }
+2020-07-12 15:06:30.0419 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 15:06:30.0647 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 15:06:30.0825 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:06:30.2987 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:06:32.0944 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 15:06:32.0944 AllServer 0001 (C2G_StartMatch_Handler.cs:13) 玩家开始匹配
+2020-07-12 15:06:32.1074 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 4, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:06:32.1074 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:06:32.1180 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 15:06:32.1180 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710733"), "CActorID" : NumberLong("281474976710732") }
+2020-07-12 15:06:32.1353 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 5, "Key" : NumberLong("281474976710742"), "InstanceId" : NumberLong("281474976710742") }
+2020-07-12 15:06:32.1474 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2020-07-12 15:06:32.1474 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 15:06:32.1474 AllServer 0001 (LandMatchComponentSystem.cs:144) 转发给了客户端一条消息，客户端Session：281474976710732
+2020-07-12 15:06:32.1727 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "MatchingNumber" : 1 }
+2020-07-12 15:06:32.1830 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 6, "Key" : NumberLong("281474976710744"), "InstanceId" : NumberLong("281474976710744") }
+2020-07-12 15:06:32.1830 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 6, "Error" : 0, "Message" : null }
+2020-07-12 15:06:32.2214 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 15:06:32.2318 AllServer 0001 (Session.cs:142) { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+2020-07-12 15:07:08.6473 AllServer 0001 (Session.cs:142) { "_t" : "A0005_PlayerOffline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:09:59.5254 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 15:10:06.2756 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 15:10:06.3036 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 15:10:06.5792 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 15:10:06.6020 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:10:06.6345 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("-5690013428026351967") }
+2020-07-12 15:10:06.6621 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("-5690013428026351967") }
+2020-07-12 15:10:06.7000 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 15:10:06.7267 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 15:10:06.7511 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:10:06.8672 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:10:09.8646 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 15:10:09.8927 AllServer 0001 (C2G_StartMatchHandler.cs:13) 玩家开始匹配
+2020-07-12 15:10:09.9024 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 4, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:10:09.9175 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:10:10.0201 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 15:10:10.0486 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710733"), "CActorID" : NumberLong("281474976710732") }
+2020-07-12 15:10:10.0601 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 5, "Key" : NumberLong("281474976710742"), "InstanceId" : NumberLong("281474976710742") }
+2020-07-12 15:10:10.0684 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2020-07-12 15:10:10.0921 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 15:10:10.0921 AllServer 0001 (LandMatchComponentSystem.cs:144) 转发给了客户端一条消息，客户端Session：281474976710732
+2020-07-12 15:10:10.1178 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "MatchingNumber" : 1 }
+2020-07-12 15:10:10.1320 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 6, "Key" : NumberLong("281474976710744"), "InstanceId" : NumberLong("281474976710744") }
+2020-07-12 15:10:10.1472 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 6, "Error" : 0, "Message" : null }
+2020-07-12 15:10:10.1759 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 15:10:10.1937 AllServer 0001 (Session.cs:142) { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+2020-07-12 15:41:23.0562 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 15:41:30.1322 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 15:41:30.1592 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 15:41:30.4485 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 15:41:30.4885 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:41:30.5094 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("-4281444341434609295") }
+2020-07-12 15:41:30.5403 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("-4281444341434609295") }
+2020-07-12 15:41:30.5719 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 15:41:30.5967 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 15:41:30.6165 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:41:30.7284 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:41:35.7919 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 15:41:35.8042 AllServer 0001 (C2G_StartMatchHandler.cs:13) 玩家开始匹配
+2020-07-12 15:41:35.8287 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 4, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:41:35.8845 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:41:35.9554 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 15:41:35.9708 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710733"), "CActorID" : NumberLong("281474976710732") }
+2020-07-12 15:41:35.9990 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 5, "Key" : NumberLong("281474976710742"), "InstanceId" : NumberLong("281474976710742") }
+2020-07-12 15:41:36.0261 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2020-07-12 15:41:36.0261 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 15:41:36.0406 AllServer 0001 (LandMatchComponentSystem.cs:144) 转发给了客户端一条消息，客户端Session：281474976710732
+2020-07-12 15:41:36.0627 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "MatchingNumber" : 1 }
+2020-07-12 15:41:36.0716 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 6, "Key" : NumberLong("281474976710744"), "InstanceId" : NumberLong("281474976710744") }
+2020-07-12 15:41:36.0864 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 6, "Error" : 0, "Message" : null }
+2020-07-12 15:41:36.1184 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 15:41:36.1184 AllServer 0001 (Session.cs:142) { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+2020-07-12 15:42:13.6544 AllServer 0001 (Session.cs:142) { "_t" : "A0005_PlayerOffline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:52:10.2895 AllServer 0001 (Session.cs:142) { "_t" : "C2G_TestMessage", "RpcId" : 1, "Info" : "==>>服务端的朋友,你好!收到请回答" }
+2020-07-12 15:52:16.4321 AllServer 0001 (Session.cs:142) { "_t" : "A0002_Login_C2R", "RpcId" : 2, "Account" : "test0", "Password" : "123" }
+2020-07-12 15:52:16.4537 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonRequest", "RpcId" : 1, "CollectionName" : "AccountInfo", "Json" : "{Account:'test0',Password:'123'}" }
+2020-07-12 15:52:16.6409 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryJsonResponse", "Components" : [{ "_t" : "AccountInfo", "_id" : NumberLong("101594395919"), "C" : [], "Account" : "test0", "Password" : "123" }], "RpcId" : 1, "Error" : 0, "Message" : null }
+2020-07-12 15:52:16.7550 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_R2G", "RpcId" : 2, "UserID" : NumberLong("101594395919") }
+2020-07-12 15:52:16.9188 AllServer 0001 (Session.cs:142) { "_t" : "A0006_GetLoginKey_G2R", "RpcId" : 2, "Error" : 0, "Message" : null, "GateLoginKey" : NumberLong("-5412545690111492026") }
+2020-07-12 15:52:16.9529 AllServer 0001 (Session.cs:142) { "_t" : "A0003_LoginGate_C2G", "RpcId" : 3, "GateLoginKey" : NumberLong("-5412545690111492026") }
+2020-07-12 15:52:17.1263 AllServer 0001 (Session.cs:142) { "_t" : "A0004_PlayerOnline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GateAppID" : 1 }
+2020-07-12 15:52:17.1740 AllServer 0001 (Session.cs:142) { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 }
+2020-07-12 15:52:17.2183 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 3, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:52:17.3531 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:52:20.5156 AllServer 0001 (Session.cs:142) { "_t" : "C2G_StartMatch_Req", "RpcId" : 5 }
+2020-07-12 15:52:20.8844 AllServer 0001 (C2G_StartMatchHandler.cs:13) 玩家开始匹配
+2020-07-12 15:52:21.3397 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryRequest", "RpcId" : 4, "_id" : NumberLong("101594395919"), "NeedCache" : true, "CollectionName" : "UserInfo" }
+2020-07-12 15:52:21.5592 AllServer 0001 (Session.cs:142) { "_t" : "DBQueryResponse", "RpcId" : 4, "Error" : 0, "Message" : null, "Component" : { "_t" : "UserInfo", "_id" : NumberLong("101594395919"), "C" : [], "UserName" : "test0", "Level" : 1, "Money" : NumberLong(10000), "Phone" : NumberLong(12324), "Email" : "axuyin", "Sex" : "男", "Title" : "贫农", "LastPlay" : 0 } }
+2020-07-12 15:52:21.8326 AllServer 0001 (GateHelper.cs:50) 127.0.0.1:20002
+2020-07-12 15:52:22.0453 AllServer 0001 (Session.cs:142) { "_t" : "EnterMatchs_G2M", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GActorID" : NumberLong("281474976710733"), "CActorID" : NumberLong("281474976710732") }
+2020-07-12 15:52:22.3125 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 5, "Key" : NumberLong("281474976710742"), "InstanceId" : NumberLong("281474976710742") }
+2020-07-12 15:52:23.0100 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2020-07-12 15:52:23.1108 AllServer 0001 (LandMatchComponentSystem.cs:53) 一位玩家加入队列
+2020-07-12 15:52:23.2570 AllServer 0001 (LandMatchComponentSystem.cs:146) 转发给了客户端一条消息，客户端Session：281474976710732
+2020-07-12 15:52:23.3668 AllServer 0001 (Session.cs:142) { "_t" : "Actor_LandMatcherPlusOne_NTT", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "MatchingNumber" : 1 }
+2020-07-12 15:52:23.4598 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddRequest", "RpcId" : 6, "Key" : NumberLong("281474976710744"), "InstanceId" : NumberLong("281474976710744") }
+2020-07-12 15:52:23.5148 AllServer 0001 (Session.cs:142) { "_t" : "ObjectAddResponse", "RpcId" : 6, "Error" : 0, "Message" : null }
+2020-07-12 15:52:23.5645 AllServer 0001 (Session.cs:142) { "_t" : "Actor_GamerEnterRoom_Ntt", "RpcId" : 0, "ActorId" : NumberLong("281474976710732"), "Gamers" : [{ "UserID" : NumberLong("101594395919") }, { "UserID" : NumberLong(0) }, { "UserID" : NumberLong(0) }] }
+2020-07-12 15:52:23.5813 AllServer 0001 (Session.cs:142) { "_t" : "T_MatchSucess_M2G", "RpcId" : 0, "UserID" : NumberLong("101594395919"), "GamerID" : NumberLong("281474976710742") }
+2020-07-12 17:22:20.1156 AllServer 0001 (Session.cs:142) { "_t" : "A0005_PlayerOffline_G2R", "RpcId" : 0, "UserID" : NumberLong("101594395919") }

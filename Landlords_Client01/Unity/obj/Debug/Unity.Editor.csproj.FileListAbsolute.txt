@@ -1,0 +1,2 @@
+C:\Workspace4Git\landlords_study\Landlords_Client01\Unity\obj\Debug\Unity.Editor.csprojAssemblyReference.cache
+C:\Workspace4Git\landlords_study\Landlords_Client01\Unity\obj\Debug\Unity.Editor.csproj.CoreCompileInputs.cache

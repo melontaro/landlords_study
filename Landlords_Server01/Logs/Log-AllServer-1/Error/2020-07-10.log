@@ -1,0 +1,155 @@
+2020-07-10 11:25:54.6621 AllServer 0001 System.Exception: AddComponent, component already exist, id: 1, component: DBComponent
+   at ETModel.Entity.AddComponent[K]() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Object\Entity.cs:line 98
+   at App.Program.Main(String[] args) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\Program.cs:line 84 
+ Main at offset 3593 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\App\Program.cs:84:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 16:05:36.3878 AllServer 0001 重复登录！ 
+ Handle at offset 504 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:92:6
+Handle at offset 373 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 1394 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\AMRpcHandler.cs:45:6
+Run at offset 296 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 609 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Landlords\Handler\Gate\A0003_LoginGateHanler.cs:34:17
+Add at offset 210 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Landlords\Component\UserComponent.cs:25:17
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 16:28:01.9212 AllServer 0001 重复登录！ 
+ Handle at offset 504 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:92:6
+Handle at offset 373 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 1394 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\AMRpcHandler.cs:45:6
+Run at offset 296 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 609 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Landlords\Handler\Gate\A0003_LoginGateHanler.cs:34:17
+Add at offset 210 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Landlords\Component\UserComponent.cs:25:17
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 16:28:01.9581 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 16:35:36.0242 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 16:39:16.5310 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 17:00:05.8317 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 5 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 19:11:20.4276 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 19:23:04.6228 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 19:25:10.1953 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 19:37:18.5828 AllServer 0001 消息没有处理: 10021 { "_t" : "A1001_GetUserInfo_C2G", "RpcId" : 4 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 23:41:05.3257 AllServer 0001 消息没有处理: 10023 { "_t" : "A1002_SetUserInfo_C2G", "RpcId" : 5, "Phone" : NumberLong(1234466), "Email" : "axuyin@163.com", "Sex" : "男", "Title" : "" } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-10 23:44:05.7078 AllServer 0001 System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Google.Protobuf.ProtoPreconditions.CheckNotNull[T](T value, String name) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\Google.Protobuf\ProtoPreconditions.cs:line 57
+   at ETModel.A1001_GetUserInfo_G2C.set_Email(String value) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\HotfixMessage.cs:line 1922
+   at ETHotfix.A1001_GetUserInfoHandler.Run(Session session, A1001_GetUserInfo_C2G request, A1001_GetUserInfo_G2C response, Action reply) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Landlords\Handler\Gate\A1001_GetUserInfoHandler.cs:line 31 
+ SetExistingTaskResult at offset 97 in file:line:column <filename unknown>:0:0
+TrySetResult at offset 145 in file:line:column <filename unknown>:0:0
+RunContinuations at offset 440 in file:line:column <filename unknown>:0:0
+RunCallback at offset 71 in file:line:column <filename unknown>:0:0
+<OutputWaitEtwEvents>b__12_0 at offset 323 in file:line:column <filename unknown>:0:0
+Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 1118 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Landlords\Handler\Gate\A1001_GetUserInfoHandler.cs:31:17
+ReplyError at offset 75 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\AMRpcHandler.cs:9:4
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+

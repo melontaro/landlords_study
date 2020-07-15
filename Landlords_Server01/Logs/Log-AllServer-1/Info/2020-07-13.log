@@ -1,0 +1,8 @@
+2020-07-13 07:46:29.7457 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2020-07-13 07:46:56.4288 AllServer 0001 (A0003_LoginGateHandler.cs:26) =====================================>A0003
+2020-07-13 07:47:05.3365 AllServer 0001 (LocationComponent.cs:62) location add key: 281474976710742 instanceId: 281474976710742
+2020-07-13 07:47:05.4462 AllServer 0001 (LocationComponent.cs:62) location add key: 281474976710744 instanceId: 281474976710744
+2020-07-13 07:47:05.4610 AllServer 0001 (LandMatchComponentSystem.cs:108) 玩家101594395919进入房间
+2020-07-13 07:47:05.5227 AllServer 0001 (M2G_MatchSucessHandler.cs:14) 玩家101594395919匹配成功 更新客户端Actor转发向Gamer
+2020-07-13 07:50:56.7793 AllServer 0001 (SessionUserComponentSystem.cs:14) 销毁User和Session101594395919
+2020-07-13 07:50:56.7901 AllServer 0001 (A0005_PlayerOffline.cs:13) 玩家101594395919下线

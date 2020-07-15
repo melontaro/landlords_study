@@ -1,0 +1,12 @@
+2020-07-11 03:13:50.9781 AllServer 0001 重复登录！ 
+ Handle at offset 504 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:92:6
+Handle at offset 373 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 1394 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\AMRpcHandler.cs:45:6
+Run at offset 296 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 628 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Landlords\Handler\Gate\A0003_LoginGateHandler.cs:35:17
+Add at offset 210 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Landlords\Component\UserComponent.cs:25:17
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+

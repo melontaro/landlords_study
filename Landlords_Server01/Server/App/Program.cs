@@ -80,7 +80,15 @@ namespace App
 				// 配置管理
 				Game.Scene.AddComponent<ConfigComponent>();
 				Game.Scene.AddComponent<ConsoleComponent>();
-				
+				//数据库组件
+
+				Game.Scene.AddComponent<UserComponent>();
+				Game.Scene.AddComponent<SessionKeyComponent>();
+				Game.Scene.AddComponent<SessionUserComponent>();
+				//斗地主服务端组件
+				Game.Scene.AddComponent<OnlineComponent>();
+				Game.Scene.AddComponent<LandMatchComponent>();
+
 				while (true)
 				{
 					try

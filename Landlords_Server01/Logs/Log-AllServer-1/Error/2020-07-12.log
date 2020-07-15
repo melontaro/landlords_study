@@ -1,0 +1,97 @@
+2020-07-12 08:12:10.5783 AllServer 0001 System.Exception: not found message handler: { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+   at ETHotfix.ActorMessageDispatcherComponentHelper.Handle(ActorMessageDispatcherComponent self, Entity entity, ActorMessageInfo actorMessageInfo) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\ActorMessageDispatcherComponentSystem.cs:line 82
+   at ETModel.ETTaskCompletionSource.ETModel.IAwaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTaskCompletionSource.cs:line 32
+   at ETModel.ETTask.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 33
+   at ETModel.ETTask.Awaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 98
+   at ETHotfix.MailboxMessageDispatcherHandler.Handle(Session session, Entity entity, Object actorMessage) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:line 16 
+ Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 894 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailBoxComponentSystem.cs:97:6
+Handle at offset 254 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 284 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxDispatcherComponentSystem.cs:75:5
+Handle at offset 276 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 584 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:16:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-12 08:12:39.3306 AllServer 0001 消息没有处理: 10026 { "_t" : "C2G_ReturnLobby_Ntt", "RpcId" : 0 } 
+ OnRead at offset 76 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:120:5
+Run at offset 497 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:154:4
+RunMessage at offset 157 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Module\Message\Session.cs:160:4
+Dispatch at offset 91 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:9:4
+DispatchAsync at offset 265 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETVoidMethodBuilder.cs:74:13
+MoveNext at offset 3589 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\OuterMessageDispatcher.cs:82:7
+Handle at offset 312 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Message\MessageDispatherComponentSystem.cs:84:5
+Error at offset 82 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:37:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-12 15:01:25.2369 AllServer 0001 System.Exception: not found message handler: { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710755"), "GamerID" : NumberLong("281474976710761") }
+   at ETHotfix.ActorMessageDispatcherComponentHelper.Handle(ActorMessageDispatcherComponent self, Entity entity, ActorMessageInfo actorMessageInfo) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\ActorMessageDispatcherComponentSystem.cs:line 82
+   at ETModel.ETTaskCompletionSource.ETModel.IAwaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTaskCompletionSource.cs:line 32
+   at ETModel.ETTask.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 33
+   at ETModel.ETTask.Awaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 98
+   at ETHotfix.MailboxMessageDispatcherHandler.Handle(Session session, Entity entity, Object actorMessage) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:line 16 
+ Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 894 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailBoxComponentSystem.cs:97:6
+Handle at offset 254 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 284 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxDispatcherComponentSystem.cs:75:5
+Handle at offset 276 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 584 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:16:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-12 15:06:32.2840 AllServer 0001 System.Exception: not found message handler: { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+   at ETHotfix.ActorMessageDispatcherComponentHelper.Handle(ActorMessageDispatcherComponent self, Entity entity, ActorMessageInfo actorMessageInfo) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\ActorMessageDispatcherComponentSystem.cs:line 82
+   at ETModel.ETTaskCompletionSource.ETModel.IAwaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTaskCompletionSource.cs:line 32
+   at ETModel.ETTask.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 33
+   at ETModel.ETTask.Awaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 98
+   at ETHotfix.MailboxMessageDispatcherHandler.Handle(Session session, Entity entity, Object actorMessage) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:line 16 
+ Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 894 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailBoxComponentSystem.cs:97:6
+Handle at offset 254 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 284 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxDispatcherComponentSystem.cs:75:5
+Handle at offset 276 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 584 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:16:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-12 15:10:10.2687 AllServer 0001 System.Exception: not found message handler: { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+   at ETHotfix.ActorMessageDispatcherComponentHelper.Handle(ActorMessageDispatcherComponent self, Entity entity, ActorMessageInfo actorMessageInfo) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\ActorMessageDispatcherComponentSystem.cs:line 82
+   at ETModel.ETTaskCompletionSource.ETModel.IAwaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTaskCompletionSource.cs:line 32
+   at ETModel.ETTask.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 33
+   at ETModel.ETTask.Awaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 98
+   at ETHotfix.MailboxMessageDispatcherHandler.Handle(Session session, Entity entity, Object actorMessage) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:line 16 
+ Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 894 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailBoxComponentSystem.cs:97:6
+Handle at offset 254 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 284 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxDispatcherComponentSystem.cs:75:5
+Handle at offset 276 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 584 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:16:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+
+2020-07-12 15:41:36.1999 AllServer 0001 System.Exception: not found message handler: { "_t" : "Actor_MatchSucess_M2G", "ActorId" : NumberLong("281474976710733"), "GamerID" : NumberLong("281474976710742") }
+   at ETHotfix.ActorMessageDispatcherComponentHelper.Handle(ActorMessageDispatcherComponent self, Entity entity, ActorMessageInfo actorMessageInfo) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\ActorMessageDispatcherComponentSystem.cs:line 82
+   at ETModel.ETTaskCompletionSource.ETModel.IAwaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTaskCompletionSource.cs:line 32
+   at ETModel.ETTask.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 33
+   at ETModel.ETTask.Awaiter.GetResult() in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\ETTask.cs:line 98
+   at ETHotfix.MailboxMessageDispatcherHandler.Handle(Session session, Entity entity, Object actorMessage) in C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:line 16 
+ Run at offset 73 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\MoveNextRunner.cs:12:13
+MoveNext at offset 894 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailBoxComponentSystem.cs:97:6
+Handle at offset 254 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 284 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxDispatcherComponentSystem.cs:75:5
+Handle at offset 276 in file:line:column <filename unknown>:0:0
+Start<TStateMachine> at offset 80 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Async\AsyncETTaskMethodBuilder.cs:126:13
+MoveNext at offset 584 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\Hotfix\Module\Actor\MailboxMessageDispatcherHandler.cs:16:5
+Error at offset 124 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Log.cs:32:4
+Error at offset 64 in file:line:column C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ET.Core\Base\Logger\NLogAdapter.cs:32:4
+

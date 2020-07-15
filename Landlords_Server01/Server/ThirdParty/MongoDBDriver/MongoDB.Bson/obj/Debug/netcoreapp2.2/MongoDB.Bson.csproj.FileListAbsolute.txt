@@ -38,3 +38,4 @@ C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\MongoDBDri
 C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\MongoDBDriver\MongoDB.Bson\obj\Debug\netcoreapp2.2\MongoDB.Bson.dll
 C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\MongoDBDriver\MongoDB.Bson\obj\Debug\netcoreapp2.2\MongoDB.Bson.xml
 C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\MongoDBDriver\MongoDB.Bson\obj\Debug\netcoreapp2.2\MongoDB.Bson.pdb
+C:\Workspace4Git\landlords_study\Landlords_Server01\Server\ThirdParty\MongoDBDriver\MongoDB.Bson\obj\Debug\netcoreapp2.2\MongoDB.Bson.csprojAssemblyReference.cache

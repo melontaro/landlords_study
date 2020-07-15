@@ -1,0 +1,10 @@
+2020-07-11 03:13:08.0055 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2020-07-11 03:13:24.7264 AllServer 0001 (A0003_LoginGateHandler.cs:26) =====================================>A0003
+2020-07-11 03:13:50.9159 AllServer 0001 (A0003_LoginGateHandler.cs:26) =====================================>A0003
+2020-07-11 03:15:54.2769 AllServer 0001 (Program.cs:36) server start........................ 1 AllServer
+2020-07-11 03:16:08.4737 AllServer 0001 (A0003_LoginGateHandler.cs:26) =====================================>A0003
+2020-07-11 03:16:39.3185 AllServer 0001 (SessionUserComponentSystem.cs:14) 销毁User和Session101594395919
+2020-07-11 03:16:39.3534 AllServer 0001 (A0005_PlayerOffline.cs:13) 玩家101594395919下线
+2020-07-11 03:17:12.2846 AllServer 0001 (A0003_LoginGateHandler.cs:26) =====================================>A0003
+2020-07-11 03:17:21.5577 AllServer 0001 (SessionUserComponentSystem.cs:14) 销毁User和Session101594395919
+2020-07-11 03:17:21.6032 AllServer 0001 (A0005_PlayerOffline.cs:13) 玩家101594395919下线

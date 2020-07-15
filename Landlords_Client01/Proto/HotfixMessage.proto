@@ -101,3 +101,185 @@ message G2C_LoginGate_Back // IResponse
 	string Message = 92;
 	int64 UserID = 1;
 }
+//客户端登陆网关请求
+message A0003_LoginGate_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 GateLoginKey = 1;
+}
+//客户端登陆网关返回
+message A0003_LoginGate_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 UserID = 1;
+}
+
+//客户端登陆认证请求
+message A0002_Login_C2R // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1; //假定的账号
+	string Password = 2; //假定的密码
+}
+//客户端登陆认证返回
+message A0002_Login_R2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string GateAddress = 1;
+	int64 GateLoginKey = 2;
+}
+
+//客户端注册请求
+message A0001_Register_C2R // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1; //假定的账号
+	string Password = 2; //假定的密码
+}
+
+//客户端注册请求回复
+message A0001_Register_R2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//获取用户信息
+message A1001_GetUserInfo_C2G // IRequest
+{
+	int32 RpcId = 90;
+}
+
+//返回用户信息
+//RpcID,Error,Message是actor RPC消息固有的
+message A1001_GetUserInfo_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string UserName = 1;
+	int32 Level = 2;
+	int64 Money = 3;
+	int64 Phone = 4;
+	string Email = 5;
+	string Sex = 6;
+	string Title = 7;
+}
+
+//设置用户信息
+message A1002_SetUserInfo_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 Phone = 1;
+	string Email = 2;
+	string Sex = 3;
+	string Title = 4;
+}
+
+//返回设置用户信息
+message A1002_SetUserInfo_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string UserName = 1;
+	int32 Level = 2;
+	int64 Money = 3;
+	int64 Phone = 4;
+	string Email = 5;
+	string Sex = 6;
+	string Title = 7;
+}
+
+//==>匹配玩家并进入斗地主游戏房间 4月18
+//玩家信息
+message GamerInfo
+{
+	int64 UserID = 1; //玩家ID
+}
+//返回大厅
+message C2G_ReturnLobby_Ntt // IMessage
+{
+	int32 RpcId = 90;
+}
+//斗地主匹配模块
+message C2G_StartMatch_Req // IRequest
+{
+	int32 RpcId = 90;
+}
+message G2C_StartMatch_Back // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+message Actor_LandMatcherPlusOne_NTT // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+	int32 MatchingNumber = 1; // 当前排队人数
+}
+message Actor_LandMatcherReduceOne_NTT // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+	int32 MatchingNumber = 1; // 当前排队人数
+}
+
+//进入房间(广播)
+message Actor_GamerEnterRoom_Ntt // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    repeated GamerInfo Gamers = 1;
+}
+//退出房间(广播)
+message Actor_GamerExitRoom_Ntt // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    int64 UserID = 1;
+}
+//匹配玩家并进入斗地主游戏房间 <==
+
+//准备游戏消息
+message Actor_GamerReady_Landlords // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+	int64 UserID = 1;
+}
+
+message GamerScore
+{
+    int64 UserID = 1;
+    int64 Score = 2;
+}
+
+message Actor_Gameover_Ntt // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    int32 Winner = 1; //byte
+    int64 BasePointPerMatch = 2;
+    int32 Multiples = 3;
+    repeated GamerScore GamersScore = 4;
+}
+
+message Actor_GamerMoneyLess_Ntt // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    int64 UserID = 1;
+}
+
+message Actor_GamerContinue_Ntt // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+}

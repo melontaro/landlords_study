@@ -24,6 +24,8 @@ namespace ETModel
 
 				Game.Scene.AddComponent<GlobalConfigComponent>();
 				Game.Scene.AddComponent<ResourcesComponent>();
+				// 下载ab包
+				await BundleHelper.DownloadBundle();
 
 				ETModel.Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("config.unity3d");
 				Game.Scene.AddComponent<ConfigComponent>();
@@ -42,8 +44,25 @@ namespace ETModel
 				//测试发送给服务端一条文本消息
 				Session session = Game.Scene.GetComponent<NetOuterComponent>().Create(GlobalConfigComponent.Instance.GlobalProto.Address);
                 G2C_TestMessage g2CTestMessage = (G2C_TestMessage) await session.Call(new C2G_TestMessage() { Info = "==>>服务端的朋友,你好!收到请回答" });
+				//联系一
+				Game.Scene.AddComponent<OpcodeTestComponent>();
 
-				
+				Game.EventSystem.Load();
+				//联系二
+				Game.Scene.AddComponent<TimerComponent>();
+				Game.Scene.AddComponent<FrameTestComponent>();
+				//练习3
+				TestRoom room = ComponentFactory.Create<TestRoom>();
+				room.AddComponent<TimeTestComponent>();
+				room.GetComponent<TimeTestComponent>().Run(Typebehavior.Waiting, 5000);
+				//添加UI组件
+				Game.Scene.AddComponent<UIComponent>();
+				Game.Scene.AddComponent<GamerComponent>();
+
+				//加上消息分发组件MessageDispatcherComponent
+				Game.Scene.AddComponent<MessageDispatcherComponent>();
+				//执行斗地主初始事件，也就是创建LandLogin界面
+				Game.EventSystem.Run(UIEventType.LandInitSceneStart);
 			}
 			catch (Exception e)
 			{
